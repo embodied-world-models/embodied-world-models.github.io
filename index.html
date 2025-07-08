@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="description"
+      content="Embodied World Models for Decision Making" />
+    <meta name="keywords" content="World Models, Physics, Machine Learning" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="data/images/favicon.png" />
+    <meta
+      property="og:image"
+      content="https://physical-world-modeling.github.io/data/images/thumbnail.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Embodied World Models for Decision Making</title>
+
+    <meta
+      name="twitter:image"
+      content="https://physical-world-modeling.github.io/data/images/thumbnail.png" />
+
+    <link rel="stylesheet" href="./data/bulma.min.css" />
+    <link rel="stylesheet" href="./data/fontawesome.all.min.css" />
+    <link rel="stylesheet" href="./data/academicons.min.css" />
+    <link rel="stylesheet" href="./data/index.css" />
+    <link rel="stylesheet" href="./data/style.css" />
+    <script src="./data/modernizr.js"></script>
+    <script src="./data/jquery.min.js"></script>
+    <script defer src="./data/fontawesome.all.min.js"></script>
+
+    <style>
+      .page-header1 {
+        position: relative;
+        padding-bottom: 1rem;
+        overflow: hidden;
+      }
+
+      .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .rcorners1 {
+        border-radius: 10px;
+        background: #ffffffd0;
+        padding: 5px;
+        font-size: 120%;
+        color: #5c5c5c;
+      }
+
+      .button {
+        border-radius: 10px;
+        background: #ffffff;
+        padding: 5px 15px 5px 15px;
+      }
+
+      /* Center crop profile images */
+      .image.is-128x128 {
+        overflow: hidden;
+        position: relative;
+      }
+
+      .image.is-128x128 img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 100%;
+        width: auto;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+
+      /* Center the image container itself */
+      .image.is-128x128.mx-auto {
+        margin: 0 auto;
+        display: block;
+      }
+
+      .card-content.has-text-centered .image.is-128x128 {
+        margin: 0 auto;
+      }
+
+      /* Mobile responsiveness for speaker cards */
+      @media screen and (max-width: 768px) {
+        .columns.is-vcentered {
+          display: block;
+        }
+        .columns.is-vcentered .column {
+          text-align: center;
+          width: 100%;
+        }
+        .columns.is-vcentered .column.is-one-quarter {
+          margin: 0 auto;
+          max-width: 200px;
+        }
+        .columns.is-vcentered .column .image.is-128x128 {
+          margin: 0 auto 1rem auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="hero page-header1">
+      <video class="video-background" autoplay muted loop playsinline>
+        <source src="data/dream.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
+      <div class="hero-body hero-content">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-2 publication-title" style="color: white">
+                Embodied World Models for Decision Making<br />
+              </h1>
+              <h1 class="is-is-5" style="color: white">
+                <b>NeurIPS 2025 Workshop, San Diego</b>
+              </h1>
+              <h1 class="is-is-5" style="color: white">
+                <b>Sunday, Dec 17 (Whole-Day Workshop)</b>
+              </h1>
+              <h1 class="is-is-5" style="color: white"><b>Room: TBD</b></h1>
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <h2 class="subtitle has-text-centered">
+          <a href="#schedule" class="button"><strong>Schedule</strong></a>
+          <a href="#speakers" class="button"><strong>Speakers</strong></a>
+          <a href="#call" class="button"><strong>Call For Papers</strong></a>
+          <a href="#organizers" class="button"><strong>Organizers</strong></a>
+        </h2>
+      </div>
+    </section>
+
+    <section class="section" style="margin-top: -50px">
+      <div class="container is-max-desktop">
+        <section class="section" id="Motivation">
+          <div class="container is-max-desktop content">
+            <h2 class="title">Overview</h2>
+            <div class="content has-text-justified">
+              World models infer and predict real-world dynamics by modeling the external environment, and have become a cornerstone of embodied artificial intelligence. They have powered recent progress in decision-making and planning for interacting agents. This workshop aims to bring together researchers working at the intersection of generative modeling, reinforcement learning, computer vision, and robotics to explore the next generation of embodied world models—models that enable agents to understand, predict, and interact with the world through learned models. By focusing on embodiment and decision-making, this workshop seeks to advance world models beyond passive prediction, toward active, goal-driven interaction with the physical and virtual world. By emphasizing embodiment and decision-making, we aim to move beyond passive sequence prediction toward goal-directed interaction with both physical and simulated worlds.
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="topics">
+          <div class="container is-max-desktop content">
+            <h2 class="title">Topics of Interest</h2>
+            <div class="content has-text-justified">
+              Our workshop will focus on topics including but not limited to the
+              following:
+              <ul>
+                <li>
+                  <strong
+                    >Controllable Video Generation and Generative
+                    Simulations.</strong
+                  >
+                  How can we improve fine-grained control in video generation
+                  and integrate it with world models conditioned on low-level
+                  actions?
+                </li>
+                <li>
+                  <strong>Incorporating physics priors.</strong> How can we
+                  leverage physics prior to empower learned world models with
+                  physical realism?
+                </li>
+                <li>
+                  <strong>Dynamic 3D Reconstruction.</strong> How can we
+                  generalize 3D reconstruction using web data while preserving
+                  scene consistency and controlled motion of dynamic elements?
+                </li>
+                <li>
+                  <strong
+                    >Applications to Robotics and Time-Series
+                    Prediction.</strong
+                  >
+                  How can we use generic dataset such as web video and text to
+                  build shared world models that can synthesize
+                  physically-plausible results for applications such as
+                  robotics?
+                </li>
+                <li>
+                  <strong
+                    >Special Considerations: Data Curation, Hallucination, and
+                    Broader Implications.</strong
+                  >
+                  How do dataset biases impact learned world models, and how can
+                  we mitigate them?
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="call">
+          <div class="container is-max-desktop content">
+            <h2 class="title">Call for Papers</h2>
+            <div class="content has-text-justified">
+              <p>
+                We invite submissions of original research papers related to
+                building physically plausible world models.
+              </p>
+
+              <p><strong>Submission Types:</strong></p>
+              <ul>
+                <li>
+                  <strong
+                    >Short Papers / Extended Abstracts (max 3 pages)</strong
+                  >
+                  - For preliminary results, interesting applications, or novel
+                  ideas that did not pan out in practice. The top three short
+                  papers will be invited for a spotlight talk.
+                </li>
+                <li>
+                  <strong>Full Papers (max 8 pages)</strong> - For original
+                  research contributions. Three award candidates will be
+                  selected for spotlight talks.
+                </li>
+              </ul>
+
+              <p><strong>Submission Guidelines:</strong></p>
+              <ul>
+                <li>
+                  Submit your paper via <a href="https://openreview.net/group?id=ICML.cc/2025/Workshop/WM">OpenReview</a>
+                </li>
+                <li>
+                  Please follow the
+                  <a href="https://icml.cc/Conferences/2025/AuthorInstructions"
+                    >style guidelines of ICML 2025</a
+                  >.
+                </li>
+                <li>
+                  Papers are non-archival - we welcome submissions that have
+                  been submitted to or accepted by other venues.
+                </li>
+                <li>
+                  Papers already accepted to ICML 2025 will undergo an expedited
+                  review process primarily evaluating their relevance to the
+                  workshop themes.
+                </li>
+                <li>
+                  All accepted papers will be presented in a poster session
+                </li>
+                <li>
+                  Short papers have a maximum length of 3 pages and appendices
+                  are not allowed. Full papers can be up to 8 pages with an
+                  unlimited appendix. References do not count toward the page
+                  limit and may be as extensive as necessary.
+                </li>
+              </ul>
+
+              <p><strong>Important Dates:</strong></p>
+              <ul>
+                <li>Submission Deadline: May 25, 2025</li>
+                <li>Notification of Acceptance: June 10, 2025</li>
+                <li>Camera ready submission: June 20, 2025</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="schedule">
+          <div class="container is-max-desktop content">
+            <h2 class="title">Schedule</h2>
+            <div class="content">
+              <ul style="list-style-type: none">
+                <li>08:50 - 09:00 Welcome/Opening Remarks</li>
+                <li>09:00 - 09:30 Invited Talk 1: (including 5 min Q&A)</li>
+                <li>09:30 - 10:00 Invited Talk 2: (including 5 min Q&A)</li>
+                <li>
+                  10:00 - 10:30 Contributed Talks: 10 min. presentations each
+                  (one presentation by a best paper)
+                </li>
+                <li>
+                  10:30 - 11:30 Poster Session with Coffee: We will encourage
+                  folks to make new connections and chat!
+                </li>
+                <li>11:30-12:15 panel discussion / debate 1</li>
+                <li>12:15 - 13:30 lunch break</li>
+                <li>13:30 - 14:00 Invited Talk 3: (including 5 min Q&A)</li>
+                <li>14:00 - 14:30 Invited Talk 4: (including 5 min Q&A)</li>
+                <li>
+                  14:30 - 15:00 Contributed Talks: 10 min. presentations each
+                  (one presentation by a best paper)
+                </li>
+                <li>
+                  15:00 - 16:00 Poster Session with Coffee: We will encourage
+                  folks to make new connections and chat!
+                </li>
+                <li>16:00 - 16:30 Invited Talk 5: (including 5 min Q&A)</li>
+                <li>16:30 - 17:00 Invited Talk 6: (including 5 min Q&A)</li>
+                <li>17:00 - 17:45 panel discussion / debate 2</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="speakers">
+          <div class="container is-max-desktop content">
+            <h2 class="title">Invited Speakers</h2>
+            <div class="content">
+              <div class="columns is-multiline">
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://ai.stanford.edu/~cbfinn/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/chelsea.jpg"
+                            alt="Chelsea Finn" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://ai.stanford.edu/~cbfinn/"
+                          style="color: inherit"
+                          >Chelsea Finn</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Stanford University & Physical Intelligence</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://xiaolonw.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/xiaolong.jpg"
+                            alt="Xiaolong Wang" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://xiaolonw.github.io/"
+                          style="color: inherit"
+                          >Xiaolong Wang</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">UCSD</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://shurans.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/shuran.jpg"
+                            alt="Shuran Song" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://shurans.github.io/"
+                          style="color: inherit"
+                          >Shuran Song</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Stanford University</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://cseweb.ucsd.edu/~haosu/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/hao.jpg"
+                            alt="Hao Su" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://cseweb.ucsd.edu/~haosu/"
+                          style="color: inherit"
+                          >Hao Su</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">
+                        University of California San Diego
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                    <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://yilundu.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/yilun.png"
+                            alt="Yilun Du" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://yilundu.github.io/"
+                          style="color: inherit"
+                          >Yilun Du</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Harvard</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://jiajunwu.com/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/jiajun.jpg"
+                            alt="Jiajun Wu" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://jiajunwu.com/"
+                          style="color: inherit"
+                          >Jiajun Wu</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Stanford University</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="organizers">
+          <div class="container is-max-desktop content">
+            <h2 class="title">Organizers</h2>
+            <div class="content">
+              <div class="columns is-multiline">
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://wyb15.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/yunbo.jpg"
+                            alt="Yunbo Wang" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://wyb15.github.io/"
+                          style="color: inherit"
+                          >Yunbo Wang</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">SJTU</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://qiwang067.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/qiwang.jpg"
+                            alt="Qi Wang" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a href="https://qiwang067.github.io/" style="color: inherit"
+                          >Qi Wang</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">SJTU</p>
+                    </div>
+                  </div>
+                </div>
+
+            
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://ymy4323460.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/mengyue.jpeg"
+                            alt="Mengyue Yang" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://ymy4323460.github.io/"
+                          style="color: inherit"
+                          >Mengyue Yang</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">University of Bristol</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://ruiqigao.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/ruiqi.png"
+                            alt="Ruiqi Gao" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://ruiqigao.github.io/"
+                          style="color: inherit"
+                          >Ruiqi Gao</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Google DeepMind</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://hkasaei.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/hamidreza.jpeg"
+                            alt="Hamidreza Kasaei" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://hkasaei.github.io/"
+                          style="color: inherit"
+                          >Hamidreza Kasaei</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">University of Groningen</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://kirmani.ai/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/sean.jpg"
+                            alt="Sean Kirmani" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a href="https://kirmani.ai/" style="color: inherit"
+                          >Sean Kirmani</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Google DeepMind</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://kuanghuei.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/kuang-huei.png"
+                            alt="Kuang-Huei Lee" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://kuanghuei.github.io/"
+                          style="color: inherit"
+                          >Kuang-Huei Lee</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Google DeepMind</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://ruoshiliu.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/ruoshi.jpg"
+                            alt="Ruoshi Liu" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://ruoshiliu.github.io/"
+                          style="color: inherit"
+                          >Ruoshi Liu</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Columbia</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://lzylucy.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/zeyi.jpg"
+                            alt="Zeyi Liu" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://lzylucy.github.io/"
+                          style="color: inherit"
+                          >Zeyi Liu</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Stanford</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://profiles.stanford.edu/fei-fei-li">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/feifei.jpg"
+                            alt="Fei-Fei Li" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://profiles.stanford.edu/fei-fei-li"
+                          style="color: inherit"
+                          >Fei-Fei Li</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Stanford</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://profiles.stanford.edu/fei-fei-li">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/carl.jpeg"
+                            alt="Carl Vondrick" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://profiles.stanford.edu/fei-fei-li"
+                          style="color: inherit"
+                          >Carl Vondrick</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Columbia</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://wenhaoyu.weebly.com/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/wenhao.png"
+                            alt="Wenhao Yu" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://wenhaoyu.weebly.com/"
+                          style="color: inherit"
+                          >Wenhao Yu</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Google DeepMind</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>
