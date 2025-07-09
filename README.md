@@ -1,1 +1,1 @@
-# physical-world-modeling.github.io
+# embodied-world-models.github.io
