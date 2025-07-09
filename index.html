@@ -172,47 +172,31 @@
           <div class="container is-max-desktop content">
             <h2 class="title">Topics of Interest</h2>
             <div class="content has-text-justified">
-              Our workshop will focus on topics including but not limited to the
-              following:
-              <ul>
-                <li>
-                  <strong
-                    >Controllable Video Generation and Generative
-                    Simulations.</strong
-                  >
-                  How can we improve fine-grained control in video generation
-                  and integrate it with world models conditioned on low-level
-                  actions?
-                </li>
-                <li>
-                  <strong>Incorporating physics priors.</strong> How can we
-                  leverage physics prior to empower learned world models with
-                  physical realism?
-                </li>
-                <li>
-                  <strong>Dynamic 3D Reconstruction.</strong> How can we
-                  generalize 3D reconstruction using web data while preserving
-                  scene consistency and controlled motion of dynamic elements?
-                </li>
-                <li>
-                  <strong
-                    >Applications to Robotics and Time-Series
-                    Prediction.</strong
-                  >
-                  How can we use generic dataset such as web video and text to
-                  build shared world models that can synthesize
-                  physically-plausible results for applications such as
-                  robotics?
-                </li>
-                <li>
-                  <strong
-                    >Special Considerations: Data Curation, Hallucination, and
-                    Broader Implications.</strong
-                  >
-                  How do dataset biases impact learned world models, and how can
-                  we mitigate them?
-                </li>
-              </ul>
+              We welcome contributions that advance theoretical foundations, algorithmic innovations, or real-world applications of world models. Topics of interest include (but are not limited to):
+<ul>
+  <li>
+    <strong>Model-based reinforcement learning and long-horizon planning.</strong>
+    Investigating how world models can benefit model-based reinforcement learning with a focus on sample efficiency, performance, and scalability. Particular attention is given to long-horizon planning, which requires the agent to reason over extended sequences of actions, anticipate delayed outcomes, and maintain coherent strategies across temporally distant states and goals, often under uncertainty and limited feedback.
+  </li>
+  <li>
+    <strong>Aligning simulation and real-world physics for robot learning.</strong>
+    Investigating how to bridge the gap between simulated and real-world physics to enhance robot learning. This includes using generative models to improve perception, planning, and control by capturing physical dynamics more accurately, modeling uncertainty and feedback effects, and learning diffusion-based policies that transfer robustly from simulation to the real world.
+  </li>
+  <li>
+    <strong>Interactive scene generation and downstream tasks.</strong>
+    Building models that generate physically plausible and semantically coherent interactive video simulations. Focus areas include action-conditioned scene synthesis, controllable simulation of agent-environment dynamics, and the development of evaluation techniques and benchmarks that assess video fidelity, temporal consistency, and task-relevant controllability for downstream applications such as planning and policy learning.
+  </li>
+  <li>
+    <strong>Video-language-action (VLA) models and leveraging the world knowledge encoded in large language models (LLMs).</strong>
+    Studying large-scale pretrained models that unify video, language, and action representations to support robust and generalizable policy learning. Core areas include curating diverse multi-modal datasets, improving cross-modal alignment, developing parameter-efficient fine-tuning methods, and enabling agents to follow complex, language-guided instructions in both simulated and real-world settings. We also explore how the structured and unstructured world knowledge embedded in large language models can be exploited to guide agents’ decision-making.
+  </li>
+  <li>
+    <strong>Applications in broader domains, such as open-world video games and autonomous driving.</strong>
+    Extending world models to embodied agents in both real-world environments and high-fidelity simulators. Key topics include integrating perception with control, sim-to-real transfer, continual learning and adaptation, and deploying agents in open-ended tasks such as Minecraft, autonomous driving, and interactive real-world scenarios.
+  </li>
+</ul>
+
+
             </div>
           </div>
         </section>
@@ -230,16 +214,18 @@
               <ul>
                 <li>
                   <strong
-                    >Short Papers / Extended Abstracts (max 3 pages)</strong
+                    >Short Papers / Extended Abstracts (max 4 pages)</strong
                   >
                   - For preliminary results, interesting applications, or novel
-                  ideas that did not pan out in practice. The top three short
-                  papers will be invited for a spotlight talk.
+                  ideas that did not pan out in practice. 
+                  <!-- The top three short -->
+                  <!-- papers will be invited for a spotlight talk. -->
                 </li>
                 <li>
-                  <strong>Full Papers (max 8 pages)</strong> - For original
-                  research contributions. Three award candidates will be
-                  selected for spotlight talks.
+                  <strong>Full Papers (4 to 9 pages)</strong> - For original
+                  research contributions. 
+                  <!-- Three award candidates will be -->
+                  <!-- selected for oral talks. -->
                 </li>
               </ul>
 
@@ -250,8 +236,8 @@
                 </li>
                 <li>
                   Please follow the
-                  <a href="https://icml.cc/Conferences/2025/AuthorInstructions"
-                    >style guidelines of ICML 2025</a
+                  <a href="https://neurips.cc/Conferences/2025/CallForPapers"
+                    >style guidelines of NeurIPS 2025</a
                   >.
                 </li>
                 <li>
@@ -259,26 +245,26 @@
                   been submitted to or accepted by other venues.
                 </li>
                 <li>
-                  Papers already accepted to ICML 2025 will undergo an expedited
+                  Papers already accepted to NeurIPS 2025 will undergo an expedited
                   review process primarily evaluating their relevance to the
                   workshop themes.
                 </li>
                 <li>
                   All accepted papers will be presented in a poster session
                 </li>
-                <li>
+                <!-- <li>
                   Short papers have a maximum length of 3 pages and appendices
                   are not allowed. Full papers can be up to 8 pages with an
                   unlimited appendix. References do not count toward the page
                   limit and may be as extensive as necessary.
-                </li>
+                </li> -->
               </ul>
 
               <p><strong>Important Dates:</strong></p>
               <ul>
-                <li>Submission Deadline: May 25, 2025</li>
-                <li>Notification of Acceptance: June 10, 2025</li>
-                <li>Camera ready submission: June 20, 2025</li>
+                <li>Submission Deadline: September 1, 2025 (Anywhere on Earth)</li>
+                <li>Notification of Acceptance: September 15, 2025 (Anywhere on Earth)</li>
+                <li>Camera ready submission: October 20, 2025 (Anywhere on Earth)</li>
               </ul>
             </div>
           </div>
@@ -289,32 +275,23 @@
             <h2 class="title">Schedule</h2>
             <div class="content">
               <ul style="list-style-type: none">
-                <li>08:50 - 09:00 Welcome/Opening Remarks</li>
-                <li>09:00 - 09:30 Invited Talk 1: (including 5 min Q&A)</li>
-                <li>09:30 - 10:00 Invited Talk 2: (including 5 min Q&A)</li>
-                <li>
-                  10:00 - 10:30 Contributed Talks: 10 min. presentations each
-                  (one presentation by a best paper)
-                </li>
-                <li>
-                  10:30 - 11:30 Poster Session with Coffee: We will encourage
-                  folks to make new connections and chat!
-                </li>
-                <li>11:30-12:15 panel discussion / debate 1</li>
-                <li>12:15 - 13:30 lunch break</li>
-                <li>13:30 - 14:00 Invited Talk 3: (including 5 min Q&A)</li>
-                <li>14:00 - 14:30 Invited Talk 4: (including 5 min Q&A)</li>
-                <li>
-                  14:30 - 15:00 Contributed Talks: 10 min. presentations each
-                  (one presentation by a best paper)
-                </li>
-                <li>
-                  15:00 - 16:00 Poster Session with Coffee: We will encourage
-                  folks to make new connections and chat!
-                </li>
-                <li>16:00 - 16:30 Invited Talk 5: (including 5 min Q&A)</li>
-                <li>16:30 - 17:00 Invited Talk 6: (including 5 min Q&A)</li>
-                <li>17:00 - 17:45 panel discussion / debate 2</li>
+              <li>09:00am - 09:15am Welcome Speech</li>
+              <li>09:15am - 09:45am Invited Talk 1: (including 5 min Q&A)</li>
+              <li>09:45am - 10:15am Invited Talk 2: (including 5 min Q&A)</li>
+              <li>10:15am - 10:30am Invited Talk 3: (including 5 min Q&A)</li>
+              <li>10:30am - 11:00am Oral Presentation</li>
+              <li>11:00am - 11:30am Invited Talk 4: (including 5 min Q&A)</li>
+              <li>11:30am - 12:00pm Invited Talk 5: (including 5 min Q&A)</li>
+              <li>12:00pm - 01:00pm Lunch Break & Lunch Buddy</li>
+              <li>01:00pm - 02:00pm Poster Session</li>
+              <li>02:00pm - 02:30pm Invited Talk 6: (including 5 min Q&A)</li>
+              <li>02:30pm - 03:00pm Invited Talk 7: (including 5 min Q&A)</li>
+              <li>03:00pm - 03:15pm Coffee Break</li>
+              <li>03:15pm - 03:45pm Invited Talk 8: (including 5 min Q&A)</li>
+              <li>03:45pm - 04:15pm Invited Talk 9: (including 5 min Q&A)</li>
+              <li>04:15pm - 05:15pm Panel Discussion</li>
+              <li>05:15pm - 05:30pm Social</li>
+
               </ul>
             </div>
           </div>
@@ -322,10 +299,17 @@
 
         <section class="section" id="speakers">
           <div class="container is-max-desktop content">
-            <h2 class="title">Invited Speakers</h2>
+            <h2 class="title">Invited Speakers & Panelists</h2>
             <div class="content">
               <div class="columns is-multiline">
-                <div class="column is-4">
+         
+
+        
+
+
+
+
+       <div class="column is-4">
                   <div class="card">
                     <div class="card-content has-text-centered">
                       <figure class="image is-128x128 mb-4 mx-auto">
@@ -348,7 +332,34 @@
                   </div>
                 </div>
 
-                <div class="column is-4">
+
+
+                    <div class="column is-4">
+                  <div class="card">
+                    <div class="card-content has-text-centered">
+                      <figure class="image is-128x128 mb-4 mx-auto">
+                        <a href="https://yilundu.github.io/">
+                          <img
+                            class="is-rounded"
+                            src="data/images/people/yilun.png"
+                            alt="Yilun Du" />
+                        </a>
+                      </figure>
+                      <p class="title is-5">
+                        <a
+                          href="https://yilundu.github.io/"
+                          style="color: inherit"
+                          >Yilun Du</a
+                        >
+                      </p>
+                      <p class="subtitle is-6">Harvard & Google DeepMind</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+        <div class="column is-4">
                   <div class="card">
                     <div class="card-content has-text-centered">
                       <figure class="image is-128x128 mb-4 mx-auto">
@@ -371,79 +382,128 @@
                   </div>
                 </div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://shurans.github.io/">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/shuran.jpg"
-                            alt="Shuran Song" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://shurans.github.io/"
-                          style="color: inherit"
-                          >Shuran Song</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">Stanford University</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://cseweb.ucsd.edu/~haosu/">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/hao.jpg"
-                            alt="Hao Su" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://cseweb.ucsd.edu/~haosu/"
-                          style="color: inherit"
-                          >Hao Su</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">
-                        University of California San Diego
-                      </p>
-                    </div>
-                  </div>
-                </div>
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://jparkerholder.github.io/">
+          <img
+            class="is-rounded"
+            src="data/images/people/jack.jpg"
+            alt="Jack Parker-Holder" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://jparkerholder.github.io/" style="color: inherit">Jack Parker-Holder</a>
+      </p>
+      <p class="subtitle is-6">Google DeepMind</p>
+    </div>
+  </div>
+</div>
 
 
-                    <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://yilundu.github.io/">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/yilun.png"
-                            alt="Yilun Du" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://yilundu.github.io/"
-                          style="color: inherit"
-                          >Yilun Du</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">Harvard</p>
-                    </div>
-                  </div>
-                </div>
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://scholar.google.com/citations?user=LFiqVpwAAAAJ">
+          <img
+            class="is-rounded"
+            src="data/images/people/john.jpeg"
+            alt="John Langford" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://scholar.google.com/citations?user=LFiqVpwAAAAJ" style="color: inherit">John Langford</a>
+      </p>
+      <p class="subtitle is-6">Microsoft Research</p>
+    </div>
+  </div>
+</div>
 
-                <div class="column is-4">
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://psc-g.github.io/">
+          <img
+            class="is-rounded"
+            src="data/images/people/pablo.jpeg"
+            alt="Pablo Samuel Castro" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://psc-g.github.io/" style="color: inherit">Pablo Samuel Castro</a>
+      </p>
+      <p class="subtitle is-6">DeepMind & Mila</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://www.comp.nus.edu.sg/~dyhsu/">
+          <img
+            class="is-rounded"
+            src="data/images/people/david.jpg"
+            alt="David Hsu" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://www.comp.nus.edu.sg/~dyhsu/" style="color: inherit">David Hsu</a>
+      </p>
+      <p class="subtitle is-6">National University of Singapore</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://causalai.net/">
+          <img
+            class="is-rounded"
+            src="data/images/people/elias.jpeg"
+            alt="Elias Bareinboim" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://causalai.net/" style="color: inherit">Elias Bareinboim</a>
+      </p>
+      <p class="subtitle is-6">Columbia University</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://neo-x.github.io/">
+          <img
+            class="is-rounded"
+            src="data/images/people/glen.png"
+            alt="Glen Berseth" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://neo-x.github.io/" style="color: inherit">Glen Berseth</a>
+      </p>
+      <p class="subtitle is-6">Mila</p>
+    </div>
+  </div>
+</div>
+
+
+    <div class="column is-4">
                   <div class="card">
                     <div class="card-content has-text-centered">
                       <figure class="image is-128x128 mb-4 mx-auto">
@@ -465,6 +525,69 @@
                     </div>
                   </div>
                 </div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://linsats.github.io/">
+          <img
+            class="is-rounded"
+            src="data/images/people/linshao.png"
+            alt="Lin Shao" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://linsats.github.io/" style="color: inherit">Lin Shao</a>
+      </p>
+      <p class="subtitle is-6">National University of Singapore</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://www.cs.utoronto.ca/~fidler/">
+          <img
+            class="is-rounded"
+            src="data/images/people/fidler.jpg"
+            alt="Sanja Fidler" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://www.cs.utoronto.ca/~fidler/" style="color: inherit">Sanja Fidler</a>
+      </p>
+      <p class="subtitle is-6">University of Toronto & NVIDIA</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://www.cs.utexas.edu/~pstone/">
+          <img
+            class="is-rounded"
+            src="data/images/people/Peter.png"
+            alt="Peter Stone" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://www.cs.utexas.edu/~pstone/" style="color: inherit">Peter Stone</a>
+      </p>
+      <p class="subtitle is-6">University of Texas at Austin</p>
+    </div>
+  </div>
+</div>
+
+
+
               </div>
             </div>
           </div>
@@ -519,7 +642,7 @@
                   </div>
                 </div>
 
-            
+    
 
                 <div class="column is-4">
                   <div class="card">
@@ -543,211 +666,266 @@
                     </div>
                   </div>
                 </div>
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://scholar.google.com/citations?user=hZtOnecAAAAJ">
+          <img
+            class="is-rounded"
+            src="data/images/people/shenyuan.jpeg"
+            alt="Shenyuan Gao" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://scholar.google.com/citations?user=hZtOnecAAAAJ" style="color: inherit">Shenyuan Gao</a>
+      </p>
+      <p class="subtitle is-6">HKUST</p>
+    </div>
+  </div>
+</div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://ruiqigao.github.io/">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/ruiqi.png"
-                            alt="Ruiqi Gao" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://ruiqigao.github.io/"
-                          style="color: inherit"
-                          >Ruiqi Gao</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">Google DeepMind</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://hkasaei.github.io/">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/hamidreza.jpeg"
-                            alt="Hamidreza Kasaei" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://hkasaei.github.io/"
-                          style="color: inherit"
-                          >Hamidreza Kasaei</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">University of Groningen</p>
-                    </div>
-                  </div>
-                </div>
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="http://hxu.rocks/">
+          <img
+            class="is-rounded"
+            src="data/images/people/huazhe.png"
+            alt="Huazhe Xu" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="http://hxu.rocks/" style="color: inherit">Huazhe Xu</a>
+      </p>
+      <p class="subtitle is-6">Tsinghua University</p>
+    </div>
+  </div>
+</div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://kirmani.ai/">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/sean.jpg"
-                            alt="Sean Kirmani" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a href="https://kirmani.ai/" style="color: inherit"
-                          >Sean Kirmani</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">Google DeepMind</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://kuanghuei.github.io/">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/kuang-huei.png"
-                            alt="Kuang-Huei Lee" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://kuanghuei.github.io/"
-                          style="color: inherit"
-                          >Kuang-Huei Lee</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">Google DeepMind</p>
-                    </div>
-                  </div>
-                </div>
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://scholar.google.com/citations?user=byaSC-kAAAAJ">
+          <img
+            class="is-rounded"
+            src="data/images/people/xinjin.jpeg"
+            alt="Xin Jin" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://scholar.google.com/citations?user=byaSC-kAAAAJ" style="color: inherit">Xin Jin</a>
+      </p>
+      <p class="subtitle is-6">Eastern Institute of Technology</p>
+    </div>
+  </div>
+</div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://ruoshiliu.github.io/">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/ruoshi.jpg"
-                            alt="Ruoshi Liu" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://ruoshiliu.github.io/"
-                          style="color: inherit"
-                          >Ruoshi Liu</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">Columbia</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://lzylucy.github.io/">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/zeyi.jpg"
-                            alt="Zeyi Liu" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://lzylucy.github.io/"
-                          style="color: inherit"
-                          >Zeyi Liu</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">Stanford</p>
-                    </div>
-                  </div>
-                </div>
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://yuanmingqi.github.io/">
+          <img
+            class="is-rounded"
+            src="data/images/people/mingqi.jpg"
+            alt="Mingqi Yuan" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://yuanmingqi.github.io/" style="color: inherit">Mingqi Yuan</a>
+      </p>
+      <p class="subtitle is-6">The Hong Kong Polytechnic University</p>
+    </div>
+  </div>
+</div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://profiles.stanford.edu/fei-fei-li">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/feifei.jpg"
-                            alt="Fei-Fei Li" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://profiles.stanford.edu/fei-fei-li"
-                          style="color: inherit"
-                          >Fei-Fei Li</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">Stanford</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://profiles.stanford.edu/fei-fei-li">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/carl.jpeg"
-                            alt="Carl Vondrick" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://profiles.stanford.edu/fei-fei-li"
-                          style="color: inherit"
-                          >Carl Vondrick</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">Columbia</p>
-                    </div>
-                  </div>
-                </div>
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://nsavov.github.io/">
+          <img
+            class="is-rounded"
+            src="data/images/people/nedko.jpeg"
+            alt="Nedko Savov" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://nsavov.github.io/" style="color: inherit">Nedko Savov</a>
+      </p>
+      <p class="subtitle is-6">INSAIT, Sofia University</p>
+    </div>
+  </div>
+</div>
 
-                <div class="column is-4">
-                  <div class="card">
-                    <div class="card-content has-text-centered">
-                      <figure class="image is-128x128 mb-4 mx-auto">
-                        <a href="https://wenhaoyu.weebly.com/">
-                          <img
-                            class="is-rounded"
-                            src="data/images/people/wenhao.png"
-                            alt="Wenhao Yu" />
-                        </a>
-                      </figure>
-                      <p class="title is-5">
-                        <a
-                          href="https://wenhaoyu.weebly.com/"
-                          style="color: inherit"
-                          >Wenhao Yu</a
-                        >
-                      </p>
-                      <p class="subtitle is-6">Google DeepMind</p>
-                    </div>
-                  </div>
-                </div>
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://guozheng-ma.github.io/">
+          <img
+            class="is-rounded"
+            src="data/images/people/guozheng.jpeg"
+            alt="Guozheng Ma" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://guozheng-ma.github.io/" style="color: inherit">Guozheng Ma</a>
+      </p>
+      <p class="subtitle is-6">Nanyang Technological University</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://cranial-xix.github.io/">
+          <img
+            class="is-rounded"
+            src="data/images/people/boliu.jpeg"
+            alt="Bo Liu" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://cranial-xix.github.io/" style="color: inherit">Bo Liu</a>
+      </p>
+      <p class="subtitle is-6">Meta FAIR</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://siheng-chen.github.io/">
+          <img
+            class="is-rounded"
+            src="data/images/people/siheng.jpg"
+            alt="Siheng Chen" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://siheng-chen.github.io/" style="color: inherit">Siheng Chen</a>
+      </p>
+      <p class="subtitle is-6">SJTU</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://scholar.google.com/citations?user=QqeG8WIAAAAJ&hl">
+          <img
+            class="is-rounded"
+            src="data/images/people/yongquan.jpeg"
+            alt="Yongquan ‘Owen’ Hu" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://scholar.google.com/citations?user=QqeG8WIAAAAJ&hl" style="color: inherit">Yongquan ‘Owen’ Hu</a>
+      </p>
+      <p class="subtitle is-6">National University of Singapore</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://www.jennyzhangzt.com/">
+          <img
+            class="is-rounded"
+            src="data/images/people/jenny.jpg"
+            alt="Jenny Zhang" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://www.jennyzhangzt.com/" style="color: inherit">Jenny Zhang</a>
+      </p>
+      <p class="subtitle is-6">University of British Columbia</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://www.nicklashansen.com/">
+          <img
+            class="is-rounded"
+            src="data/images/people/hansen.jpeg"
+            alt="Nicklas Hansen" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://www.nicklashansen.com/" style="color: inherit">Nicklas Hansen</a>
+      </p>
+      <p class="subtitle is-6">UC San Diego</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://openreview.net/profile?id=~Minting_Pan1">
+          <img
+            class="is-rounded"
+            src="data/images/people/minting.png"
+            alt="Minting Pan" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://openreview.net/profile?id=~Minting_Pan1" style="color: inherit">Minting Pan</a>
+      </p>
+      <p class="subtitle is-6">SJTU</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="column is-4">
+  <div class="card">
+    <div class="card-content has-text-centered">
+      <figure class="image is-128x128 mb-4 mx-auto">
+        <a href="https://scholar.google.com/citations?user=TwMib_QAAAAJ">
+          <img
+            class="is-rounded"
+            src="data/images/people/vangool.jpeg"
+            alt="Luc Van Gool" />
+        </a>
+      </figure>
+      <p class="title is-5">
+        <a href="https://scholar.google.com/citations?user=TwMib_QAAAAJ" style="color: inherit">Luc Van Gool</a>
+      </p>
+      <p class="subtitle is-6">INSAIT, Sofia University</p>
+    </div>
+  </div>
+</div>
+
+
               </div>
             </div>
           </div>
